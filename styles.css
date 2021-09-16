@@ -1,0 +1,582 @@
+/* 
+
+--------------- Color Fonts and Styles -----------------
+Hero and Footer Color: #1F2937 
+
+Hero Text 
+  Main Text Color: 48px extra bold #F9FAF8;
+  Secondary Text Color: #E5E7EB;
+  Header Logo text: 24px #F9FAF8
+
+Button Color: #3882F6;
+Information Header Text: 36px extra-bold #1F2937;
+
+Quote section background-color: #E5E7EB
+Quote text: 36px light #1F2937
+
+*/
+body{
+    margin: 0;
+  }
+  
+  header{
+    background-color: #1F2937;
+    height: 15vh;
+  
+  }
+  nav{
+    height: 50%;
+  }
+  
+  nav ul{
+    display: flex;
+    list-style-type: none; 
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 10%;
+    padding-top: 20px;
+  }
+  
+  nav li{
+    font-size: 18px;
+    margin: 0 10px;
+    color: #F9FAF8;
+  }
+  
+  .logo{
+    margin-right: auto;
+    font-size: 24px;
+  }
+  
+  /* Hero Styling */
+  .container{
+    height: 55%;
+    width: 75%;
+    margin: auto;
+    display: flex;
+    gap: 70px;
+  }
+  
+  h1{
+    margin-top: 0;
+    font-size: 48px;
+    color: #F9FAF8;
+    
+  }
+  
+  .hero{
+    background-color: #1F2937;
+    height: 600px;
+    display: flex;
+    align-items: center;
+  
+  }
+  
+  
+  .main{
+    text-align: left;
+    width: 100%;
+    color: #E5E7EB;
+    font-size: 18px;
+    margin-bottom: 10%;
+  }
+  
+  .btn-hero{
+    font-size: 18px;
+    color: #F9FAF8;;
+    background-color: #3882F6;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 10px;
+  }
+
+  .btn-hero:hover{
+    background-color: #F9FAF8;
+    color: #3882F6;
+    transition: 100ms linear;
+  }
+  
+  /*  Random information styling */
+
+  .service{
+    height: 450px;
+    width: 75%;
+    margin: auto;
+  }
+
+  .pic-container{
+    height: 55%;
+    margin: auto;
+    display: flex;
+    display: flex;
+    gap: 70px;
+  }
+
+  .box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    gap: 25px;
+    
+  }
+  
+  h2{
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 60px;
+  }
+
+  p{
+      text-align: center;
+  }
+
+  img.card{
+      width: 225px;
+      height: 225px;
+  }
+  
+  .card{
+    border-radius: 30px;
+    flex: 1;
+  }
+
+  /* Blockquote */
+
+blockquote{
+    font-size: 30px;
+    text-align: justify;
+}
+
+.quote p {
+    text-align: end;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 5%;
+}
+
+#quote{
+    height: 60vh;
+    background-color: #E5E7EB;
+
+}
+
+.quote{
+    width: 75%;
+    margin: auto auto;   
+    padding: 70px 0;
+}
+
+
+/* Call to Action Styling*/
+
+#cta{
+    height: 30vh;
+}
+
+h3{
+  margin-bottom: 0;
+}
+
+.cta{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 20px;
+  color: #F9FAF8;
+  width: 75%;
+  height: 70%;
+  border: #3882F6 solid 1px;
+  border-radius: 10px;
+  background-color: #3882F6;
+  margin: 5% auto ;
+}
+
+.cta p{
+  margin-top: 0;
+
+}
+
+.cta-button{
+  color: #F9FAF8;
+  background-color: #3882F6;
+  font-size: 14px;
+  border: #F9FAF8 1px solid;
+  border-radius: 10px;
+  padding: 10px 40px;
+}
+
+.cta-button:hover{
+  background-color: #E5E7EB;
+  color: #3882F6;
+  transition: 100ms ease-in;
+}
+
+
+/* Footer styling*/
+
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  background-color: #1F2937;
+  color: #F9FAF8;
+}
+
+/*  ---------------Media Queries----------- */
+
+@media screen and (min-width: 1200px) and (max-width: 1418px){
+
+  .pic-container{
+    gap: 50px
+  }
+
+  /*  Random information styling */
+  .service{
+    height: 450px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  h2{
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 60px;
+  }
+
+
+  img.card{
+      width: 200px;
+      height: 200px;
+  }
+
+}
+
+
+@media screen and (min-width: 920px) and (max-width: 1199px) {
+
+  .hero-img{
+    width: 400px;
+  }
+
+  .pic-container{
+
+    gap: 10px;
+    
+  }
+
+   /*  Random information styling */
+   .service{
+    height: 500px;
+    width: 90%;
+    margin: 0 auto;
+
+  }
+  
+  h2{
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 60px;
+  }
+
+
+  img.card{
+    width: 200px;
+    height: 200px;
+  }
+
+    /* Blockquote */
+
+blockquote{
+  font-size: 25px;
+  text-align: justify;
+}
+
+.quote p {
+  font-size: 25px;
+}
+
+
+
+}
+
+
+@media screen and (min-width: 744px) and (max-width: 919px) {
+  .hero{
+    height: 100vh;
+  }
+
+  .container{
+    height: 55%;
+    width: 75%;
+    margin: 1% auto 0 ;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+  }
+
+  .main{
+    text-align: center;
+  }
+
+  .hero-img{
+    width: 500px;
+  }
+
+
+  .pic-container{
+    width: 75%;   
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .box{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    width: 150%;
+    
+  }
+
+   /*  Random information styling */
+   .service{
+    height: 700px;
+    width: 100%;
+    margin: 0 auto;
+
+  }
+  
+  h2{
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 60px;
+  }
+
+
+  img.card{
+    width: 150px;
+    margin: 0 auto;
+    display: block;
+    margin: 0 auto;
+    gap: 10px;
+  }
+
+    /* Blockquote */
+
+blockquote{
+  font-size: 25px;
+  text-align: justify;
+}
+
+.quote p {
+  font-size: 25px;
+}
+
+/* Call to Action */
+
+h3{
+  margin-left: 10px;
+}
+
+.cta p {
+  margin-top: 0;
+  margin-left: 10px;
+  text-align: left ;
+  font-size: 14px;
+}
+
+.cta-button{
+  color: #F9FAF8;
+  background-color: #3882F6;
+  font-size: 14px;
+  border: #F9FAF8 1px solid;
+  border-radius: 10px;
+  padding: 10px 40px;
+}
+
+.cta-button{
+  padding: 10px 60px;
+  margin-right: 20px;
+}
+
+}
+
+@media screen and (min-width: 650px) and (max-width: 743px){
+  h1{
+    font-size: 36px;
+  }
+
+  .hero{
+    height: 100vh;
+  }
+
+  .container{
+    height: 55%;
+    width: 75%;
+    margin: 1% auto 0 ;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+  }
+
+  .main{
+    text-align: center;
+  }
+
+  .hero-img{
+    width: 500px;
+  }
+
+
+  .pic-container{
+    width: 75%;   
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+  }
+
+
+  img.card{
+    width: 135px;
+    margin: 0 auto;
+    display: block;
+    margin: 0 auto;
+    gap: 10px;
+  }
+
+  blockquote{
+    font-size: 25px;
+    text-align: justify;
+  }
+
+  .quote p {
+    font-size: 20px;
+    padding: 0%;
+  }
+  
+  h3{
+    margin-left: 10px;
+  }
+
+  .cta p {
+    margin-top: 0;
+    margin-left: 10px;
+    text-align: left ;
+    font-size: 14px;
+  }
+
+}
+
+@media screen and (min-width: 500px) and (max-width: 649px){
+
+  .logo{
+    margin-right: 15%;
+    font-size: 24px;
+  }
+  
+
+  nav li{
+    font-size: 14px;
+  }
+  
+  h1{
+    font-size: 36px;
+  }
+
+  .hero{
+    height: 100vh;
+  }
+
+  .container{
+    height: 55%;
+    width: 75%;
+    margin: 1% auto 0 ;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+  }
+
+  .main{
+    text-align: center;
+  }
+
+
+  .service{
+    height: inherit;
+  }
+  .pic-container{
+    height: ;
+    width: 75%;   
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10%auto;
+  }
+
+  .box{
+    display: block;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+  }
+
+
+  img.card{
+    width: 150px;
+    margin: 0 auto;
+    display: block;
+    margin: 0 auto;
+    gap: 10px;
+  }
+
+  blockquote{
+    font-size: 18px;
+    text-align: justify;
+  }
+
+  .quote p {
+    font-size: 20px;
+    padding: 0%;
+  }
+  
+  .cta {
+    width: 90%;
+  }
+  h3{
+    font-size: 19px;
+    margin-left: 10px;
+  }
+
+  .cta p {
+    margin-top: 0;
+    margin-left: 10px;
+    text-align: left ;
+    font-size: 12px;
+  }
+
+  .cta-button{
+    font-size: 12px;
+  }
+}
